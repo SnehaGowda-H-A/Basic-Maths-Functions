@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Basic Math Functions </title>
+        <link rel="stylesheet" href="style.css"/> 
+
+        <script>
+            const add = () =>{
+                let a = document.getElementById("N1").value;
+                let b = document.getElementById("N2").value;
+                let c = parseInt(a) + parseInt(b);
+                document.getElementById("container").innerText = c;
+            }
+
+            const sub = () =>{
+                let a = document.getElementById("N1").value;
+                let b = document.getElementById("N2").value;
+                let c = parseInt(a) - parseInt(b);
+                document.getElementById("container").innerText = c;
+            }
+
+            const mul = () =>{
+                let a = document.getElementById("N1").value;
+                let b = document.getElementById("N2").value;
+                let c = parseInt(a) * parseInt(b);
+                document.getElementById("container").innerText = c;
+            }
+
+            const div = () =>{
+                let a = document.getElementById("N1").value;
+                let b = document.getElementById("N2").value;
+                let c = parseInt(a) / parseInt(b);
+                document.getElementById("container").innerText = c;
+            }
+
+            const mod = () =>{
+                let a = document.getElementById("N1").value;
+                let b = document.getElementById("N2").value;
+                let c = parseInt(a) % parseInt(b);
+                document.getElementById("container").innerText = c;
+            }
+        </script>
+    </head>
+    <body>
+        <h1> <i>Basic Maths Functions- [Add, Sub, Mul, Div, Modulus] </i> </h1>
+        <p>Enter the Digits:</p>
+        <input type="number" id="N1" placeholder="Enter the First Digit" class="input"/>
+        <input type="number" id="N2" placeholder="Enter the Second Digit" class="input"/>
+        <p>
+            <button onclick="add()" class="btn"> Add </button>
+            <button onclick="sub()" class="btn"> Subtract </button>
+            <button onclick="mul()" class="btn"> Multiply </button>
+            <button onclick="div()" class="btn"> Divide </button>
+            <button onclick="mod()" class="btn"> Modulus </button>
+        </p>
+
+        <div id="container" class="result"></div>
+    </body>
+</html>
